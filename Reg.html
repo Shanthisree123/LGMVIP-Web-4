@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="Reg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Enrollment Form</h1>
+        <div class="select-form">
+            <form action="#" id="select-form">
+                <div class="class">
+                    <label for="name">Name :</label> 
+                    <input type="text" class="input field" id="name" required >
+                </div>
+
+                <div class="class">
+                    <label for="email">Email :</label>
+                    <input type="email" class="input field" id="email" required >
+                </div>
+                <div class="class">
+                    <label for="Phone">Phone :</label>
+                    <input type="text" class="input field" id="pNumber" required >
+                </div>
+                <div class="class">
+                    <label for="age">Age :</label>
+                    <input type="text" class="input field" id="age" required >
+                </div>
+                <div class="class">
+                    <label for="addr">Address :</label>
+                    <textarea name="addr" id="addr" cols="30" rows="3"></textarea>
+                </div>
+                <div class="class">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" name="gender" id="male" value="Male"> Male
+                    <input type="radio" name="gender" id="female" value="Female"> Female
+                </div>
+
+                
+                <div class="skill">
+                    <label for="Skills" class="Skills">Skills :</label> 
+                    <input type="checkbox" name="Skills" id="Python" value="Python">Python
+                    <input type="checkbox" name="Skills" id="Java" value="Java">Java
+                    <input type="checkbox" name="Skills" id="Data Science" value="Data Science">Data Science
+                    <input type="checkbox" name="Skills" id="Web Development" value="Web Development">Web Development
+                   
+                </div>
+                <br>
+
+                <div class="buttons">
+                    <button type="button" id="enroll-btn">Enroll here...</button>
+
+                    <button type="button" id="clear-btn">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="page"></div>
+        <div class="tin">
+		            <h1>Enrolled Students</h1>
+		            <div class="boxx">
+		                <table id="display">
+		                    <tr>
+		                        <th>Description</th>
+		                        <th>Image</th>
+		                    </tr>
+		                </table>
+		            </div>
+        </div>
+    </div>
+
+    <script src="Reg.js"></script>
+</body>
+</html>
